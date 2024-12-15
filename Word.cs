@@ -109,10 +109,10 @@ namespace crossword
             }
 
             int currentIndex = Array.FindIndex(blocks, p => p == characterBlock) - 1;
-            //if (currentIndex >= 0)
-            //{
-            //    blocks[currentIndex].Backspace();
-            //}
+            if (currentIndex >= 0)
+            {
+                blocks[currentIndex].Backspace();
+            }
         }
 
         public int GetLength()
